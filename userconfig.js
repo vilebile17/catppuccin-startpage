@@ -204,6 +204,13 @@ const default_configuration = {
               icon: "brand-discord",
               icon_color: palette.red,
             },
+            {
+              name: "Docker",
+              url: "https://hub.docker.com",
+              icon: "brand-docker",
+              icon_color: palette.red,
+            },
+
           ],
         },
         {
