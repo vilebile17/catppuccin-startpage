@@ -10,24 +10,16 @@ let palette = initThemeSystem(preferredLightTheme, preferredDarkTheme);
 const default_configuration = {
   overrideStorage: true,
   temperature: {
-    location: "London",
+    location: "Liverpool",
     scale: "C",
   },
   clock: {
     format: "k:i p",
     icon_color: palette.maroon,
   },
-  additionalClocks: [
-    {
-      label: "UA",
-      timezone: "Europe/Kyiv",
-      format: "h:i",
-      icon_color: palette.peach,
-    },
-  ],
   search: {
     engines: {
-      p: ["https://www.perplexity.ai/search/?q=", "PerplexityAI"],
+      w: ["https://en.wikipedia.org/wiki/", "Wikipedia"],
       d: ["https://duckduckgo.com/?q=", "DuckDuckGo"],
       g: ["https://google.com/search?q=", "Google"],
     },
@@ -43,208 +35,173 @@ const default_configuration = {
   openLastVisitedTab: true,
   tabs: [
     {
-      name: "myself",
-      background_url: "src/img/banners/banner_09.gif",
+      name: "stuff",
+      background_url: "src/img/banners/banner_18.gif",
       categories: [
         {
-          name: "bookmarks",
+          name: "quicklinks",
           links: [
-            {
-              name: "raindrop",
-              url: "https://app.raindrop.io",
-              icon: "droplet-bolt",
-              icon_color: palette.green,
-            },
             {
               name: "musicForProgramming();",
               url: "https://musicforprogramming.net",
-              icon: "binary-tree",
-              icon_color: palette.peach,
-            },
-          ],
-        },
-        {
-          name: "workspace",
-          links: [
-            {
-              name: "gmail",
-              url: "https://mail.google.com",
-              icon: "brand-gmail",
+              icon: "music",
               icon_color: palette.green,
             },
             {
-              name: "calendar",
-              url: "https://calendar.google.com",
-              icon: "calendar-filled",
+              name: "Hans Wehr",
+              url: "https://ejtaal.net/aa",
+              icon: "book-2",
               icon_color: palette.peach,
             },
-            {
-              name: "sheets",
-              url: "https://docs.google.com/spreadsheets",
-              icon: "table",
-              icon_color: palette.red,
-            },
-            {
-              name: "drive",
-              url: "https://drive.google.com/drive/home",
-              icon: "brand-google-drive",
-              icon_color: palette.blue,
-            },
+
           ],
         },
         {
-          name: "media",
+          name: "stack",
           links: [
             {
-              name: "уп",
-              url: "https://www.pravda.com.ua",
-              icon: "news",
+              name: "Proton Mail",
+              url: "https://mail.proton.me",
+              icon: "mail",
               icon_color: palette.green,
             },
             {
-              name: "mil.in.ua",
-              url: "https://mil.in.ua",
-              icon: "badge-filled",
+              name: "Github",
+              url: "https://github.com",
+              icon: "brand-github",
               icon_color: palette.peach,
             },
             {
-              name: "куток",
-              url: "https://kutok.io",
-              icon: "border-radius",
+              name: "ChatGPT",
+              url: "https://chatgpt.com",
+              icon: "robot",
               icon_color: palette.red,
+            }
+          ],
+        },
+        {
+          name: "streaks",
+          links: [
+            {
+              name: "Brilliant",
+              url: "https://brilliant.org",
+              icon: "bulb",
+              icon_color: palette.green,
             },
             {
-              name: "ґрунт",
-              url: "https://grnt.media",
-              icon: "eye-bolt",
-              icon_color: palette.blue,
+              name: "Boot.dev",
+              url: "https://boot.dev",
+              icon: "code",
+              icon_color: palette.peach,
             },
             {
-              name: "village",
-              url: "https://www.village.com.ua",
-              icon: "home-2",
-              icon_color: palette.mauve,
+              name: "MonkeyType",
+              url: "https://monkeytype.com",
+              icon: "keyboard",
+              icon_color: palette.red,
             },
           ],
         },
       ],
     },
     {
-      name: "dev",
+      name: "work",
       background_url: "src/img/banners/banner_07.gif",
       categories: [
         {
-          name: "development",
+          name: "revision",
           links: [
             {
-              name: "github",
-              url: "https://github.com",
-              icon: "brand-github",
+              name: "SaveMyExams",
+              url: "https://www.savemyexams.com",
+              icon: "bolt",
               icon_color: palette.green,
             },
             {
-              name: "stackoverflow",
-              url: "https://stackoverflow.com",
-              icon: "brand-stackoverflow",
+              name: "Quizlet",
+              url: "https://quizlet.com",
+              icon: "search",
               icon_color: palette.peach,
+            }
+          ],
+        },
+        {
+          name: "platforms",
+          links: [
+            {
+              name: "Google classroom",
+              url: "https://classroom.google.com",
+              icon: "school",
+              icon_color: palette.green,
             },
             {
-              name: "duckdb",
-              url: "https://app.motherduck.com",
-              icon: "file-type-sql",
-              icon_color: palette.red,
-            },
-            {
-              name: "collab",
-              url: "https://colab.research.google.com",
+              name: "DreamClass",
+              url: "https://stewards.dreamclass.io",
               icon: "notebook",
-              icon_color: palette.mauve,
-            },
-          ],
-        },
-        {
-          name: "challenges",
-          links: [
-            {
-              name: "kaggle",
-              url: "https://www.kaggle.com",
-              icon: "brain",
-              icon_color: palette.green,
-            },
-            {
-              name: "leetcode",
-              url: "https://leetcode.com",
-              icon: "code-plus",
               icon_color: palette.peach,
             },
             {
-              name: "exercism",
-              url: "https://exercism.org",
-              icon: "code-minus",
+              name: "Zoom",
+              url: "https://app.zoom.us",
+              icon: "video",
               icon_color: palette.red,
             },
             {
-              name: "aoc",
-              url: "https://adventofcode.com",
-              icon: "brand-linktree",
+              name: "Teams",
+              url: "https://teams.live.com",
+              icon: "brand-teams",
               icon_color: palette.blue,
-            },
-          ],
-        },
-        {
-          name: "resources",
-          links: [
-            {
-              name: "dou",
-              url: "https://dou.ua",
-              icon: "brand-prisma",
-              icon_color: palette.green,
-            },
-            {
-              name: "hackernews",
-              url: "https://news.ycombinator.com",
-              icon: "brand-redhat",
-              icon_color: palette.peach,
-            },
-            {
-              name: "uber engineering",
-              url: "https://www.uber.com/en-GB/blog/london/engineering",
-              icon: "brand-uber",
-              icon_color: palette.red,
-            },
-            {
-              name: "netflix tech blog",
-              url: "https://netflixtechblog.com",
-              icon: "brand-netflix",
-              icon_color: palette.blue,
-            },
+            }
           ],
         },
       ],
     },
     {
       name: "chi ll",
-      background_url: "src/img/banners/banner_08.gif",
+      background_url: "src/img/banners/banner_14.gif",
       categories: [
         {
-          name: "social media",
+          name: "media",
           links: [
             {
-              name: "telegram",
-              url: "https://web.telegram.org",
-              icon: "brand-telegram",
+              name: "Youtube",
+              url: "https://youtube.com",
+              icon: "brand-youtube",
               icon_color: palette.green,
             },
             {
-              name: "facebook",
-              url: "https://www.facebook.com",
-              icon: "brand-facebook",
+              name: "Reddit",
+              url: "https://www.reddit.com",
+              icon: "brand-reddit",
               icon_color: palette.peach,
             },
             {
-              name: "reddit",
-              url: "https://www.reddit.com/r/unixporn",
-              icon: "brand-reddit",
+              name: "Guardian",
+              url: "https://www.theguardian.com",
+              icon: "brand-guardian",
+              icon_color: palette.red,
+            },
+          ],
+        },
+        {
+          name: "dev",
+          links: [
+            {
+              name: "Arch Linux",
+              url: "https://archlinux.org",
+              icon: "typography",
+              icon_color: palette.green,
+            },
+            {
+              name: "Cheatsheet",
+              url: "https://devhints.io",
+              icon: "prompt",
+              icon_color: palette.peach,
+            },
+            {
+              name: "Discord Dev",
+              url: "https://discord.com/developers/home",
+              icon: "brand-discord",
               icon_color: palette.red,
             },
           ],
@@ -253,60 +210,19 @@ const default_configuration = {
           name: "gaming",
           links: [
             {
-              name: "infiniteBacklog",
-              url: "https://infinitebacklog.net",
-              icon: "device-gamepad",
+              name: "GDDL",
+              url: "https://gdladder.com/",
+              icon: "ladder",
               icon_color: palette.green,
             },
             {
-              name: "steam",
-              url: "https://store.steampowered.com",
-              icon: "brand-steam",
+              name: "GDCS",
+              url: "https://www.gdcreatorschool.com/",
+              icon: "school",
               icon_color: palette.peach,
             },
-            {
-              name: "epicgames",
-              url: "https://store.epicgames.com",
-              icon: "brand-fortnite",
-              icon_color: palette.red,
-            },
-            {
-              name: "nintendo",
-              url: "https://store.nintendo.co.uk",
-              icon: "device-nintendo",
-              icon_color: palette.blue,
-            },
           ],
-        },
-        {
-          name: "video",
-          links: [
-            {
-              name: "anilist",
-              url: "https://anilist.co/home",
-              icon: "brand-funimation",
-              icon_color: palette.green,
-            },
-            {
-              name: "youtube",
-              url: "https://www.youtube.com",
-              icon: "brand-youtube",
-              icon_color: palette.peach,
-            },
-            {
-              name: "patreon",
-              url: "https://www.patreon.com",
-              icon: "brand-patreon",
-              icon_color: palette.red,
-            },
-            {
-              name: "kyivstar",
-              url: "https://tv.kyivstar.ua",
-              icon: "star-filled",
-              icon_color: palette.blue,
-            },
-          ],
-        },
+        }
       ],
     },
   ],
