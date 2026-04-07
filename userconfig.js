@@ -208,7 +208,7 @@ const default_configuration = {
               name: "Docker",
               url: "https://hub.docker.com",
               icon: "brand-docker",
-              icon_color: palette.red,
+              icon_color: palette.blue,
             },
 
           ],
