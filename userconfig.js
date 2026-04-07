@@ -31,7 +31,7 @@ const default_configuration = {
   disabled: [],
   localIcons: true,
   localFonts: true,
-  fastlink: "https://www.perplexity.ai",
+  fastlink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
   openLastVisitedTab: true,
   tabs: [
     {
