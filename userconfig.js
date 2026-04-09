@@ -199,9 +199,9 @@ const default_configuration = {
               icon_color: palette.peach,
             },
             {
-              name: "Discord Dev",
-              url: "https://discord.com/developers/home",
-              icon: "brand-discord",
+              name: "Go Docs",
+              url: "https://pkg.go.dev/",
+              icon: "brand-golang",
               icon_color: palette.red,
             },
             {
