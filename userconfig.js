@@ -154,6 +154,23 @@ const default_configuration = {
             }
           ],
         },
+        {
+          name: "maths",
+          links: [
+            {
+              name: "wolfram",
+              url: "https://www.wolframalpha.com/",
+              icon: "math-integral-x",
+              icon_color: palette.green,
+            },
+            {
+              name: "OEIS",
+              url: "https://oeis.org/",
+              icon: "list-search",
+              icon_color: palette.peach,
+            },
+          ],
+        },
       ],
     },
     {
