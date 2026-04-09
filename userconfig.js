@@ -214,7 +214,7 @@ const default_configuration = {
           ],
         },
         {
-          name: "gaming",
+          name: "games",
           links: [
             {
               name: "GDDL",
@@ -227,6 +227,12 @@ const default_configuration = {
               url: "https://www.gdcreatorschool.com/",
               icon: "school",
               icon_color: palette.peach,
+            },
+            {
+              name: "Sporcle",
+              url: "https://www.sporcle.com/games/category/geography",
+              icon: "map-pin-question",
+              icon_color: palette.red,
             },
           ],
         }
