@@ -42,7 +42,7 @@ const default_configuration = {
           name: "quicklinks",
           links: [
             {
-              name: "musicForProgramming();",
+              name: "music();",
               url: "https://musicforprogramming.net",
               icon: "music",
               icon_color: palette.green,
@@ -53,7 +53,12 @@ const default_configuration = {
               icon: "book-2",
               icon_color: palette.peach,
             },
-
+            {
+              name: "leetcode",
+              url: "https://leetcode.com/",
+              icon: "prompt",
+              icon_color: palette.red,
+            }
           ],
         },
         {
@@ -158,7 +163,7 @@ const default_configuration = {
           name: "maths",
           links: [
             {
-              name: "wolfram",
+              name: "Wolfram",
               url: "https://www.wolframalpha.com/",
               icon: "math-integral-x",
               icon_color: palette.green,
