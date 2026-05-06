@@ -54,7 +54,7 @@ const default_configuration = {
               icon_color: palette.peach,
             },
             {
-              name: "leetcode",
+              name: "Leetcode",
               url: "https://leetcode.com/",
               icon: "prompt",
               icon_color: palette.red,
