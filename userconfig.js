@@ -42,9 +42,9 @@ const default_configuration = {
           name: "quicklinks",
           links: [
             {
-              name: "music();",
-              url: "https://musicforprogramming.net",
-              icon: "music",
+              name: "excalidraw",
+              url: "https://excalidraw.com/",
+              icon: "brush",
               icon_color: palette.green,
             },
             {
