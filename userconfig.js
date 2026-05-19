@@ -42,7 +42,7 @@ const default_configuration = {
           name: "quicklinks",
           links: [
             {
-              name: "excalidraw",
+              name: "Excalidraw",
               url: "https://excalidraw.com/",
               icon: "brush",
               icon_color: palette.green,
